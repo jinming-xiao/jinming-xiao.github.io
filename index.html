@@ -61,7 +61,7 @@
       $("#tree").fancytree({
         // Explicitly pass XML as data type
         checkbox: false,
-        source: { url: "./data.xml", dataType: "xml" },
+        source: { url: "data.xml", dataType: "xml" },
         lazyLoad: function(event, data) {
           // Lazy folders also request XML data
           data.result = { url: "ajax-sub.xml", dataType: "xml" };
