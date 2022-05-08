@@ -60,7 +60,7 @@
     $(function(){
       $("#tree").fancytree({
         // Explicitly pass XML as data type
-        checkbox: false,
+        checkbox: false, minExpandLevel: 2,
         source: { url: "data.xml", dataType: "xml" },
         lazyLoad: function(event, data) {
           // Lazy folders also request XML data
@@ -93,7 +93,7 @@ insert into tab values (2, 'def');
 
 select string_agg(to_char(id,'999'), ','), string_agg(name, ',') from tab;
 
-postgres runtime function call trace, click PostgresMain to explore
+postgres runtime function call trace, click each function to explore
 PostgresMain 
   exec_simple_query
     ...
