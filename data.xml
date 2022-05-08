@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><children xmlns:xi="http://www.w3.org/2001/XInclude"><node><title>postgres</title><children>
+<?xml version="1.0" encoding="UTF-8"?><children xmlns:xi="http://www.w3.org/2001/XInclude"><node><title>PostgresMain</title><children>
 <node><title>ReadCommand</title><children>
   <node><title>SocketBackend</title><children>
     <node><title>pq_startmsgread</title><children>
