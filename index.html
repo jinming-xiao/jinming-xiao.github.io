@@ -93,7 +93,15 @@ insert into tab values (2, 'def');
 
 select string_agg(to_char(id,'999'), ','), string_agg(name, ',') from tab;
 
-double click POSTGRES to explore
+postgres runtime function call trace, click PostgresMain to explore
+PostgresMain 
+  exec_simple_query
+    ...
+    PortalRun
+      ...
+      advance_aggregates
+        ...
+          int4_to_char
 </pre>
 
   </div>
